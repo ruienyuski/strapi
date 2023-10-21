@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "tel": {
+      "type": "integer",
+      "required": true
+    },
+    "is_paid": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "total": {
+      "type": "integer",
+      "required": true
+    },
+    "product": {
+      "type": "json"
+    }
+  }
+}
